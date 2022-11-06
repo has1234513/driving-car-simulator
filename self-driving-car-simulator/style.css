@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background: darkgray;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speedometer {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    text-align: center;
+    margin: auto auto auto 700px
+}
+
+#myCanvas {
+    background-color: lightgoldenrodyellow;
+}
