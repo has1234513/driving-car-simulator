@@ -69,7 +69,8 @@ class Car {
         ctx.rotate(-this.angle);
 
         ctx.beginPath();
-        ctx.rect(  //build rectangle
+        //build rectangle
+        ctx.rect(  
             -this.width/2,
             -this.height/2,
             this.width,
