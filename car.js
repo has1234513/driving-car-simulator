@@ -49,13 +49,22 @@ class Car {
         if (Math.abs(this.speed) < this.friction) {
             this.speed = 0
         }
+        
 
-        if (this.controls.left) {
-            this.angle += 0.03;
-        }
+        if (this.speed !=0 ) {
 
-        if (this.controls.right) {
-            this.angle -= 0.03;
+            //if flip is negative, car won't rotate() 
+            const flip = this.speed > 0 ? 1 : -1;
+            
+            // rotates car to left
+            if (this.controls.left) {
+                this.angle += 0.03*flip;
+            }
+            
+            //rotates car to right
+            if (this.controls.right) {
+                this.angle -= 0.03*flip;
+            }
         }
 
         this.x -= Math.sin(this.angle)*this.speed;
