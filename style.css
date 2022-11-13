@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: rgb(84, 49, 49);
+    background: rgb(182, 106, 106);
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -9,5 +9,5 @@ body {
 }
 
 #myCanvas {
-    background-color: rgb(50, 50, 43);
+    background-color: rgb(138, 138, 109);
 }
