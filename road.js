@@ -16,14 +16,26 @@ class Road{
         ctx.linewidth = 5;
         ctx.strokeStyle = "white";
 
-        ctx.beginPath();
-        ctx.moveTo(this.left, this.top);
-        ctx.lineTo(this.left, this.bottom);
-        ctx.stroke();
+        for (let i=0; i<=this.laneCount;i++) {
+            //lerp => linear interpolation (calculates x posiiton of lanes)
+            const x = lerp(
+                this.left,
+                this.right,
+                i/this.laneCount
+            );
 
-        ctx.beginPath();
-        ctx.moveTo(this.right, this.top);
-        ctx.lineTo(this.right, this.bottom);
-        ctx.stroke();
+            //add dotted lines 
+            if (i>0 && i<this.laneCount) {
+                ctx.setLineDash([10, 10]);
+            } else {
+                ctx.setLineDash([]);
+            }
+
+            // draw road lanes
+            ctx.beginPath();
+            ctx.moveTo(x, this.top);
+            ctx.lineTo(x, this.bottom);
+            ctx.stroke();
+        }
     }
 }
