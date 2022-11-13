@@ -15,8 +15,12 @@ class Car {
     }
 
     update() {
-        // forward motion
-        if (this.controls.forward) {
+       this.#move()
+    }
+
+    #move() {
+         // forward motion
+         if (this.controls.forward) {
             this.speed += this.acceleration;
         }
 
@@ -85,8 +89,7 @@ class Car {
             this.width,
             this.height
         )
-        ctx.fillStyle = 'blue';
-        ctx.strokeStyle = 'red';
+        ctx.fillStyle = 'red';
         ctx.fill();
         ctx.stroke();
         ctx.restore();

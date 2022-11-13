@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: darkgray;
+    background: rgb(84, 49, 49);
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -8,15 +8,6 @@ body {
     justify-content: center;
 }
 
-.speedometer {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: aqua;
-    text-align: center;
-    margin: auto auto auto 700px
-}
-
 #myCanvas {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(50, 50, 43);
 }

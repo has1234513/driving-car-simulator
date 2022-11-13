@@ -26,7 +26,6 @@ class Controls {
                 
             }
 
-            console.table('keydown',this)
         }
         document.onkeyup = (e) => {
             switch (e.key) {
@@ -44,7 +43,6 @@ class Controls {
                     break
                 
             }
-            console.table('keyUp',this)
         }
     }
 
