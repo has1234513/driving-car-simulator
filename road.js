@@ -44,7 +44,6 @@ class Road{
            
             ctx.setLineDash([20, 20]);
           
-
             // draw road lanes
             ctx.beginPath();
             ctx.moveTo(x, this.top);
