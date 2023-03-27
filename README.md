@@ -1,4 +1,4 @@
-# self-driving-car-simulator
+# driving-car-simulator
 
 
 - Open index.html file with any browser.
